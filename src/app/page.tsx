@@ -75,6 +75,12 @@ export default function LandingPage() {
           </span>
         </motion.div>
 
+        <motion.div variants={fadeUp} className="mb-3">
+          <p className="text-[10px] text-gray-400 font-medium tracking-wider uppercase">
+            Built by Bening Kumala Haqi for UX Digital Business Exam
+          </p>
+        </motion.div>
+
         <motion.h1
           variants={fadeUp}
           className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4"

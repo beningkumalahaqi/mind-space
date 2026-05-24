@@ -261,6 +261,13 @@ export default function DashboardPage() {
           but worth it.&rdquo; — MindfulExplorer
         </p>
       </Card>
+
+      {/* Credit */}
+      <div className="text-center py-4">
+        <p className="text-[10px] text-gray-400 font-medium tracking-wider uppercase">
+          Built by Bening Kumala Haqi for UX Digital Business Exam
+        </p>
+      </div>
     </PageContainer>
   );
 }
