@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MindSpace — Digital Wellness Prototype 🧠🌿
 
-## Getting Started
+A mobile-first wellness prototype for **Gen Z digital well-being** and **SDG 3: Good Health and Well-being**. Built with Next.js 16, TypeScript, and Tailwind CSS v4.
 
-First, run the development server:
+> **Academic UX/UI Prototype** — No backend or database required. All data persists in your browser via localStorage.
+
+---
+
+## ✨ Features
+
+| Page | Route | What it does |
+|------|-------|-------------|
+| **Landing** | `/` | Hero, feature highlights, CTA |
+| **Dashboard** | `/dashboard` | Daily greeting, mood summary, progress, quick actions |
+| **Mood Check-in** | `/mood` | 6 emoji-based moods, daily notes, history & frequency |
+| **Screen Time** | `/reflection` | Track hours, select top app, reflection question, wellness insight |
+| **Challenges** | `/challenge` | Digital detox challenges, streaks, daily logging |
+| **Community** | `/community` | Anonymous posts, likes, replies, supportive feed |
+| **Journal** | `/journal` | Distraction-free writing, entry history, delete |
+| **Emergency Help** | `/help` | Crisis hotlines, self-care, meditation, breathing exercise |
+
+---
+
+## 🎨 Design System
+
+**Calming pastel palette**: Lavender (`#A78BFA`), Mint (`#6EE7B7`), Peach (`#FBBF24`) on a warm cream background (`#FEFCE8`). Rounded corners, soft shadows, glass effects, and smooth framer-motion animations throughout.
+
+---
+
+## 📱 Mobile Preview
+
+On **desktop** (≥1024px), the prototype renders inside a realistic phone frame (393×852px) with dynamic island, status bar, and home indicator — so you can demo the mobile experience without a device.
+
+On **mobile/tablet**, the app fills the full screen natively.
+
+---
+
+## 🚀 Getting Started
 
 ```bash
+# Install dependencies
+npm install
+
+# Start dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) — fully navigable and interactive.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🏗️ Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+src/
+├── app/              # 8 routes (App Router)
+├── components/
+│   ├── ui/           # 8 reusable UI components
+│   └── shared/       # 8 domain-specific components
+├── data/             # Mock data (challenges, moods, resources, etc.)
+├── hooks/            # useLocalStorage, useMoodHistory
+├── lib/              # cn() utility, storage helpers
+└── types/            # TypeScript interfaces
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📄 Documentation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [`agent/docs/mindspace-prototype.md`](./agent/docs/mindspace-prototype.md) — Full project documentation (architecture, UX decisions, design system, limitations)
+- [`agent/plan/mindspace-prototype/plan.md`](./agent/plan/mindspace-prototype/plan.md) — Implementation plan
+- [`agent/review/mindspace-prototype/review.md`](./agent/review/mindspace-prototype/review.md) — Architecture review
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## ⚠️ Prototype Limitations
+
+- **No backend** — all data is client-side only (localStorage)
+- **No real authentication** — no user accounts
+- **Local-only community** — posts exist only in your browser
+- **Static insights** — AI-like insights are template-based, not truly personalized
+- **Single-user** — no multi-user or family features
+
+---
+
+*Built for academic UX/UI purposes — Supporting SDG 3: Good Health and Well-being*

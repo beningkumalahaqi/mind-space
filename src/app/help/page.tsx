@@ -66,8 +66,7 @@ export default function HelpPage() {
                 : "text-gray-500 hover:text-gray-700"
             )}
           >
-            <span>{tab.icon}</span>
-            <span className="hidden sm:inline">{tab.label}</span>
+            <span className="text-lg">{tab.icon}</span>
           </button>
         ))}
       </div>

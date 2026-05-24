@@ -2,8 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ToastProvider } from "@/components/ui/Toast";
-import { BottomNav } from "@/components/shared/BottomNav";
-import { FloatingActions } from "@/components/shared/FloatingActions";
+import { MobileFrame } from "@/components/shared/MobileFrame";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,11 +42,12 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-background">
+      <body className="min-h-full bg-background">
         <ToastProvider>
-          {children}
-          <BottomNav />
-          <FloatingActions />
+          {/* MobileFrame handles layout — renders nav + actions on both mobile and desktop */}
+          <MobileFrame>
+            {children}
+          </MobileFrame>
         </ToastProvider>
       </body>
     </html>

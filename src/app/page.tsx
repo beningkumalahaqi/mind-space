@@ -96,13 +96,13 @@ export default function LandingPage() {
         <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-3 justify-center">
           <Link href="/dashboard">
             <Button size="lg" className="w-full sm:w-auto shadow-lg shadow-mindspace-primary/25">
-              Start Your Journey
+              Start
               <ArrowRight size={18} className="ml-2" />
             </Button>
           </Link>
           <Link href="/help">
             <Button variant="outline" size="lg" className="w-full sm:w-auto">
-              Emergency Help
+              Help
             </Button>
           </Link>
         </motion.div>

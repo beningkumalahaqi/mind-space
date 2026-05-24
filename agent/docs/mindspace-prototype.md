@@ -257,6 +257,20 @@ const [value, setValue, remove] = useLocalStorage<T>(key, initialValue);
 
 ---
 
+## Mobile Frame (Desktop Preview)
+
+On desktop screens (≥1024px), the entire app is wrapped inside a realistic **phone frame component** (`MobileFrame.tsx`) that simulates a mobile device:
+
+- **Dimensions**: 393×852px (iPhone-like proportions)
+- **Dynamic Island**: Black pill cutout at the top
+- **Status bar**: Time, signal, wifi, and battery icons
+- **Rounded corners**: 3rem radius with 3px bezel border
+- **Home indicator**: The familiar iOS-style bar at the bottom
+- **Desktop background**: MindSpace gradient (lavender → white → mint)
+- **Label**: "MOBILE PROTOTYPE PREVIEW" text centered above the frame
+
+On actual mobile/tablet devices (<1024px), the frame disappears and the app renders full-screen, providing a native app-like experience. This dual-mode approach allows stakeholders to preview the mobile prototype on any device without needing a physical phone.
+
 ## Animation Strategy
 
 | Context | Technique | Library |

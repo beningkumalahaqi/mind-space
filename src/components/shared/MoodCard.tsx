@@ -26,15 +26,15 @@ export function MoodCard({
       whileHover={{ scale: 1.05 }}
       onClick={onClick}
       className={cn(
-        "flex flex-col items-center gap-1.5 p-4 rounded-2xl transition-all duration-200 cursor-pointer min-w-[72px]",
+        "flex flex-col items-center justify-center gap-0.5 w-full aspect-square rounded-xl transition-all duration-200 cursor-pointer",
         selected
-          ? `${bgColor} ring-2 ring-offset-2 ring-${color.replace("text-", "")} shadow-md`
+          ? `${bgColor} ring-2 ring-offset-2 ring-mindspace-primary/60 shadow-sm`
           : "bg-white hover:bg-gray-50 border border-gray-100",
         "focus:outline-none focus:ring-2 focus:ring-mindspace-primary/40"
       )}
     >
-      <span className="text-3xl leading-none">{emoji}</span>
-      <span className={cn("text-xs font-medium", selected ? color : "text-gray-600")}>
+      <span className="text-2xl leading-none">{emoji}</span>
+      <span className={cn("text-[10px] font-medium text-center", selected ? color : "text-gray-500")}>
         {label}
       </span>
     </motion.button>

@@ -76,7 +76,7 @@ export default function MoodPage() {
             </Button>
           }
         />
-        <div className="grid grid-cols-3 sm:grid-cols-6 gap-3 mt-2">
+        <div className="grid grid-cols-3 gap-3 mt-2">
           {moodOptions.map((mood, index) => (
             <motion.div
               key={mood.label}
