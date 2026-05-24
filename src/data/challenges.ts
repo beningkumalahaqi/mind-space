@@ -1,0 +1,88 @@
+import type { Challenge } from "@/types";
+
+export const defaultChallenges: Challenge[] = [
+  {
+    id: "ch-1",
+    title: "Phone-Free Morning",
+    description:
+      "Start your day without checking your phone for the first 30 minutes. Enjoy breakfast, stretch, or just breathe.",
+    duration: "30 min",
+    icon: "🌅",
+    color: "text-amber-600",
+    bgColor: "bg-amber-100",
+    totalDays: 7,
+    completedDays: 3,
+    streak: 2,
+    joined: true,
+  },
+  {
+    id: "ch-2",
+    title: "Social Media Detox",
+    description:
+      "Take a full day away from all social media platforms. Replace scrolling with real-world connections.",
+    duration: "24 hours",
+    icon: "📵",
+    color: "text-rose-600",
+    bgColor: "bg-rose-100",
+    totalDays: 5,
+    completedDays: 1,
+    streak: 1,
+    joined: true,
+  },
+  {
+    id: "ch-3",
+    title: "Mindful Moments",
+    description:
+      "Take 5 minutes, three times a day, to pause and breathe deeply. Set reminders if needed.",
+    duration: "5 min × 3",
+    icon: "🧘",
+    color: "text-purple-600",
+    bgColor: "bg-purple-100",
+    totalDays: 14,
+    completedDays: 0,
+    streak: 0,
+    joined: false,
+  },
+  {
+    id: "ch-4",
+    title: "Gratitude Notes",
+    description:
+      "Write down three things you're grateful for every evening. Shift your focus to the positive.",
+    duration: "5 min",
+    icon: "✨",
+    color: "text-emerald-600",
+    bgColor: "bg-emerald-100",
+    totalDays: 10,
+    completedDays: 4,
+    streak: 4,
+    joined: true,
+  },
+  {
+    id: "ch-5",
+    title: "Digital Sunset",
+    description:
+      "Put away all screens 1 hour before bed. Read a book, journal, or practice gentle stretching.",
+    duration: "1 hour",
+    icon: "🌙",
+    color: "text-indigo-600",
+    bgColor: "bg-indigo-100",
+    totalDays: 7,
+    completedDays: 0,
+    streak: 0,
+    joined: false,
+  },
+  {
+    id: "ch-6",
+    title: "Nature Break",
+    description:
+      "Spend at least 20 minutes outside today. No phone, no music — just you and nature.",
+    duration: "20 min",
+    icon: "🌿",
+    color: "text-green-600",
+    bgColor: "bg-green-100",
+    totalDays: 3,
+    completedDays: 0,
+    streak: 0,
+    joined: false,
+  },
+];
